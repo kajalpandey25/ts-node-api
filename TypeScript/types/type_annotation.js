@@ -42,20 +42,38 @@
 // Here are some practice questions related to string types in typescript:
 // todo string Initialization:
 // ? Declare a variables message of type string and assign it the value "Hello, Typescript!".
-var message = "Hello, TypeScript!";
-// todo Concatenation: 
-var myFullName = "kajal pandey";
-var myFirstName = "kajal";
-var myLastName = 'pandey';
-myFullName = myFirstName + myLastName;
-console.log(myFullName);
+// let message:string = "Hello, TypeScript!"
+// // todo Concatenation: 
+// let myFullName = "kajal pandey"
+// let myFirstName = "kajal"
+// let myLastName = 'pandey'
+// myFullName = myFirstName + myLastName
+// console.log(myFullName);
 // Todo string length:
-var sentence = "Please follow me!";
-var sentenceLength = sentence.length;
-console.log(sentenceLength);
-// todo uppercase and lowercase
-var text = "please follow me";
-var uppercaseText = text.toUpperCase();
-var lowercaseText = text.toLowerCase();
-console.log(uppercaseText);
-console.log(lowercaseText);
+// let sentence:string = "Please follow me!"
+// let sentenceLength:number = sentence.length;
+// console.log(sentenceLength);
+// // todo uppercase and lowercase
+// let text:string = "please follow me"
+// let uppercaseText:string = text.toUpperCase();
+// let lowercaseText:string = text.toLowerCase();
+// console.log(uppercaseText);
+// console.log(lowercaseText);
+// Todo Substring:
+var originalString = "Hello, TypeScript!";
+var startIndex = 7;
+var endIndex = 15;
+// Extract substring from startIndex to endIndex (exclusive)
+var substring = originalString.substring(startIndex, endIndex);
+console.log(substring);
+// Todo String Comparison: 
+// Todo string template:
+// * ------------------
+// * Boolean Type
+// * ---------------------
+// ? In Typescript, the boolean type represents a value that can be either true or false. It is one of the basic primitive type in the language.
+// let isMyNameVinod:boolean = true;
+// let isDone:boolean = true;
+// let hasStarted:boolean = false;
+// hasStarted = "yes" //invalid
+// Question: check even number:

@@ -72,30 +72,51 @@
 // todo string Initialization:
 // ? Declare a variables message of type string and assign it the value "Hello, Typescript!".
 
-let message:string = "Hello, TypeScript!"
+// let message:string = "Hello, TypeScript!"
 
-// todo Concatenation: 
+// // todo Concatenation: 
 
-let myFullName = "kajal pandey"
-let myFirstName = "kajal"
-let myLastName = 'pandey'
+// let myFullName = "kajal pandey"
+// let myFirstName = "kajal"
+// let myLastName = 'pandey'
 
-myFullName = myFirstName + myLastName
-console.log(myFullName);
+// myFullName = myFirstName + myLastName
+// console.log(myFullName);
 
 // Todo string length:
 
-let sentence:string = "Please follow me!"
-let sentenceLength:number = sentence.length;
-console.log(sentenceLength);
+// let sentence:string = "Please follow me!"
+// let sentenceLength:number = sentence.length;
+// console.log(sentenceLength);
 
-// todo uppercase and lowercase
+// // todo uppercase and lowercase
 
-let text:string = "please follow me"
-let uppercaseText:string = text.toUpperCase();
-let lowercaseText:string = text.toLowerCase();
-console.log(uppercaseText);
-console.log(lowercaseText);
+// let text:string = "please follow me"
+// let uppercaseText:string = text.toUpperCase();
+// let lowercaseText:string = text.toLowerCase();
+// console.log(uppercaseText);
+// console.log(lowercaseText);
+
+// Todo Substring:
+
+// let originalString: string = "Hello, TypeScript!";
+// let startIndex: number = 7;
+// let endIndex: number = 15;
+
+// // Extract substring from startIndex to endIndex (exclusive)
+// let substring: string = originalString.substring(startIndex, endIndex);
+
+// console.log(substring);
+
+
+// Todo String Comparison: 
+
+
+// Todo string template:
+
+
+
+
 
 
 
