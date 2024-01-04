@@ -25,3 +25,54 @@ var userInput = function (value) {
 // function call
 console.log(userInput(10));
 console.log(userInput("subscribe"));
+// Todo Homework Time
+// We want to create a function that formats the value passed to it in a specific way based on its type:
+//1. If the input is a number, it should add a dollar sign and format it with two decimal places.
+// function formatValue(input: number | string): string {
+//    if (typeof input === 'number') {
+//        // If the input is a number, add a dollar sign and format with two decimal places
+//        return `$${input.toFixed(2)}`;
+//    } else if (typeof input === 'string') {
+//        // If the input is a string, return it as is
+//        return input;
+//    } else {
+//        // Handle other types if needed
+//        return 'Invalid input type';
+//    }
+// }
+// // Examples
+// const formattedNumber = formatValue(123.456);
+// console.log(formattedNumber); // Output: $123.46
+// const stringValue = formatValue('Hello');
+// console.log(stringValue); // Output: Hello
+// 2. If the input is a boolean, it should return "Yes" for true and "No" for false.
+// function formatValue(value: any): string {
+//    if (typeof value === 'boolean') {
+//        return value ? 'Yes' : 'No';
+//    } else {
+//        // Handle other types if needed
+//        return String(value);
+//    }
+// }
+// // Example usage:
+// const booleanValue: boolean = true;
+// const formattedResult: string = formatValue(booleanValue);
+// console.log(formattedResult); // Output: "Yes"
+//3. If the input is a string, it should capitalize the first letter.
+function formatValue(input) {
+    if (typeof input === 'string') {
+        // If the input is a string, capitalize the first letter
+        return input.charAt(0).toUpperCase() + input.slice(1);
+    }
+    else {
+        // For other types (e.g., number), return the input as is
+        return input;
+    }
+}
+// Example usage:
+var stringValue = "example";
+var formattedString = formatValue(stringValue);
+console.log(formattedString); // Output: "Example"
+var numberValue = 42;
+var formattedNumber = formatValue(numberValue);
+console.log(formattedNumber); // Output: 42
