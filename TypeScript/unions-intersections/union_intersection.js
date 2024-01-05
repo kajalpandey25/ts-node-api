@@ -76,3 +76,17 @@ console.log(formattedString); // Output: "Example"
 var numberValue = 42;
 var formattedNumber = formatValue(numberValue);
 console.log(formattedNumber); // Output: 42
+var employee = {
+    name: 'Kajal',
+    age: 22,
+    emp_id: 111,
+    department: "IT"
+};
+var user = { name: "Kajal Pandey", age: 22 };
+var myLocation = { country: 'India', city: 'Gurugram' };
+// define
+var createUserProfile = function (user, location) {
+    return "My name is ".concat(user.name, " and I am living in city: ").concat(location.city);
+};
+// call
+console.log(createUserProfile(user, myLocation));

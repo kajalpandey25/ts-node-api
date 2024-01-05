@@ -95,3 +95,55 @@ function formatValue(input: string | number): string | number {
  console.log(formattedNumber); // Output: 42
  
 
+
+//  Intersection types allow you to combine multiple types into a single type. Ypu use the &(ampresand) symbol to define an intersection type.
+
+type Person = {
+  name:string;
+  age:number
+}
+type Employee = {
+  emp_id: number;
+  department: string
+}
+
+type EmployeeDetails = Person & Employee
+
+const employee:EmployeeDetails ={
+  name:'Kajal',
+  age:22,
+  emp_id: 111,
+  department: "IT"
+}
+
+// Practice: Create User Profile
+// You are given two TS types: User and MyLocation. The User type represents basic user information, while the MYLocation type contains details about the user's location.
+// Create a function called createUserProfile that takes a User object and a MYlocation object as arguments and prints the user's name and the city they are from.
+
+type User = {
+  name: string;
+  age:number
+}
+
+type MyLocation= {
+  country:string;
+  city:string
+}
+
+
+const user:User = {name:"Kajal Pandey", age:22}
+const myLocation:MyLocation = {country:'India', city:'Gurugram'}
+
+// define
+const createUserProfile : (user:User, location:MyLocation) => string =(user:User, location:MyLocation) : string =>{
+  return `My name is ${user.name} and I am living in city: ${location.city}`
+ 
+
+}
+
+// call
+console.log(createUserProfile(user, myLocation));
+
+
+
+
